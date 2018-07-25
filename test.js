@@ -1,7 +1,18 @@
-const Queue = require('./lib/Queue')
+const Obj = require('./tools/Obj')
 
-const queue = new Queue()
-queue.enqueue(2)
-queue.enqueue(4)
-queue.enqueue('123123da')
-console.log(queue.dequeue())
+const test = {
+  a: null,
+  b: 2,
+  c: {
+    d: null,
+    e: 3,
+    f: "",
+    g: {
+      h: null,
+      i: 7,
+      j: undefined
+    }
+  }
+}
+
+console.log(Obj.replaceKeys(test, '-', true))
