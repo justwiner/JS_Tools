@@ -1,4 +1,4 @@
-const Obj = require('./tools/Obj')
+require('./extend/extendObj')
 
 const test = {
   a: null,
@@ -15,4 +15,4 @@ const test = {
   }
 }
 
-console.log(Obj.replaceKeys(test, '-', true))
+console.log(Object.replaceKeys(test, '-', true))
