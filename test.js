@@ -1,18 +1,5 @@
-require('./extend/extendObj')
+const LinkedList = require('./lib/LinkedList')
 
-const test = {
-  a: null,
-  b: 2,
-  c: {
-    d: null,
-    e: 3,
-    f: "",
-    g: {
-      h: null,
-      i: 7,
-      j: undefined
-    }
-  }
-}
-
-console.log(Object.replaceKeys(test, '-', true))
+let list = new LinkedList();
+list.append(15);
+list.append(10)
